@@ -1,0 +1,85 @@
+[ft-head] ep01 train_loss=0.2488 val_loss=0.1723 val_acc=0.9488 val_auc=0.9640 (54s)
+[ft-head] ep02 train_loss=0.1175 val_loss=0.1382 val_acc=0.9472 val_auc=0.9857 (55s)
+[ft-head] ep03 train_loss=0.0829 val_loss=0.0854 val_acc=0.9776 val_auc=0.9917 (52s)
+[ft-unfrozen] ep01 train_loss=0.1561 val_loss=0.1294 val_acc=0.9696 val_auc=0.9898 (101s)
+[ft-unfrozen] ep02 train_loss=0.0898 val_loss=0.0884 val_acc=0.9808 val_auc=0.9953 (88s)
+[ft-unfrozen] ep03 train_loss=0.0682 val_loss=0.0635 val_acc=0.9824 val_auc=0.9970 (2842s)
+[ft-unfrozen] ep04 train_loss=0.0465 val_loss=0.0510 val_acc=0.9840 val_auc=0.9975 (7172s)
+[ft-unfrozen] ep05 train_loss=0.0432 val_loss=0.0431 val_acc=0.9840 val_auc=0.9986 (5494s)
+[ft-unfrozen] ep06 train_loss=0.0411 val_loss=0.0410 val_acc=0.9872 val_auc=0.9988 (3684s)
+[ft-unfrozen] ep07 train_loss=0.0283 val_loss=0.0376 val_acc=0.9872 val_auc=0.9987 (4562s)
+[ft-unfrozen] ep08 train_loss=0.0268 val_loss=0.0407 val_acc=0.9840 val_auc=0.9985 (5468s)
+[ft-unfrozen] ep09 train_loss=0.0205 val_loss=0.0368 val_acc=0.9824 val_auc=0.9991 (3169s)
+[ft-unfrozen] ep10 train_loss=0.0217 val_loss=0.0347 val_acc=0.9840 val_auc=0.9993 (3360s)
+[ft-unfrozen] ep11 train_loss=0.0168 val_loss=0.0282 val_acc=0.9904 val_auc=0.9992 (3219s)
+[ft-unfrozen] ep12 train_loss=0.0168 val_loss=0.0255 val_acc=0.9888 val_auc=0.9995 (392s)
+[ft-unfrozen] ep13 train_loss=0.0154 val_loss=0.0194 val_acc=0.9936 val_auc=0.9997 (10925s)
+[ft-unfrozen] ep14 train_loss=0.0131 val_loss=0.0219 val_acc=0.9920 val_auc=0.9996 (6438s)
+[ft-unfrozen] ep15 train_loss=0.0127 val_loss=0.0173 val_acc=0.9952 val_auc=0.9998 (1028s)
+[ft-unfrozen] ep16 train_loss=0.0120 val_loss=0.0152 val_acc=0.9936 val_auc=0.9999 (102s)
+[ft-unfrozen] ep17 train_loss=0.0094 val_loss=0.0221 val_acc=0.9920 val_auc=0.9997 (95s)
+[ft-unfrozen] ep18 train_loss=0.0081 val_loss=0.0120 val_acc=0.9952 val_auc=1.0000 (93s)
+[ft-unfrozen] ep19 train_loss=0.0117 val_loss=0.0095 val_acc=0.9984 val_auc=1.0000 (97s)
+[ft-unfrozen] ep20 train_loss=0.0058 val_loss=0.0102 val_acc=0.9968 val_auc=1.0000 (87s)
+[ft-unfrozen] ep21 train_loss=0.0110 val_loss=0.0090 val_acc=0.9968 val_auc=1.0000 (59s)
+[ft-unfrozen] ep22 train_loss=0.0045 val_loss=0.0089 val_acc=0.9968 val_auc=1.0000 (59s)
+[ft-unfrozen] ep23 train_loss=0.0115 val_loss=0.0115 val_acc=0.9968 val_auc=0.9999 (59s)
+[ft-unfrozen] ep24 train_loss=0.0055 val_loss=0.0099 val_acc=0.9968 val_auc=0.9999 (59s)
+[ft-unfrozen] ep25 train_loss=0.0077 val_loss=0.0152 val_acc=0.9952 val_auc=0.9999 (65s)
+{
+  "model": "resnet_ft25",
+  "selected_checkpoint": "ft-unfrozen:22",
+  "val_loss": 0.008879552595317364,
+  "test": {
+    "n": 621,
+    "accuracy": 0.9903381642512077,
+    "precision": 0.9797979797979798,
+    "recall": 0.9603960396039604,
+    "specificity": 0.9961538461538462,
+    "f1": 0.97,
+    "roc_auc": 0.9989718202589489,
+    "confusion_matrix": {
+      "tn": 518,
+      "fp": 2,
+      "fn": 4,
+      "tp": 97
+    }
+  },
+  "test_ci95": {
+    "accuracy": [
+      0.9822866344605475,
+      0.9967793880837359
+    ],
+    "precision": [
+      0.9464285714285714,
+      1.0
+    ],
+    "recall": [
+      0.9183673469387755,
+      0.990909090909091
+    ],
+    "f1": [
+      0.9444444444444444,
+      0.9906563689858082
+    ],
+    "roc_auc": [
+      0.9968248548992831,
+      1.0
+    ]
+  },
+  "test_nlm_only": {
+    "n": 110,
+    "accuracy": 0.9636363636363636,
+    "precision": 1.0,
+    "recall": 0.9310344827586207,
+    "specificity": 1.0,
+    "f1": 0.9642857142857143,
+    "roc_auc": 0.9973474801061009,
+    "confusion_matrix": {
+      "tn": 52,
+      "fp": 0,
+      "fn": 4,
+      "tp": 54
+    }
+  }
+}

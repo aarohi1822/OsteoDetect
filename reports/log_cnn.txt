@@ -1,0 +1,72 @@
+[cnn] ep01 train_loss=0.4116 val_loss=0.2834 val_acc=0.8672 val_auc=0.9250 (38s)
+[cnn] ep02 train_loss=0.2917 val_loss=0.2288 val_acc=0.9088 val_auc=0.9467 (16s)
+[cnn] ep03 train_loss=0.2505 val_loss=0.1965 val_acc=0.9312 val_auc=0.9541 (15s)
+[cnn] ep04 train_loss=0.2419 val_loss=0.2068 val_acc=0.9168 val_auc=0.9623 (15s)
+[cnn] ep05 train_loss=0.2086 val_loss=0.1696 val_acc=0.9488 val_auc=0.9686 (17s)
+[cnn] ep06 train_loss=0.2088 val_loss=0.2019 val_acc=0.9184 val_auc=0.9696 (17s)
+[cnn] ep07 train_loss=0.1961 val_loss=0.1596 val_acc=0.9392 val_auc=0.9738 (19s)
+[cnn] ep08 train_loss=0.1781 val_loss=0.1636 val_acc=0.9424 val_auc=0.9754 (19s)
+[cnn] ep09 train_loss=0.1769 val_loss=0.1633 val_acc=0.9408 val_auc=0.9774 (18s)
+[cnn] ep10 train_loss=0.1543 val_loss=0.1449 val_acc=0.9504 val_auc=0.9776 (17s)
+[cnn] ep11 train_loss=0.1511 val_loss=0.1381 val_acc=0.9488 val_auc=0.9790 (18s)
+[cnn] ep12 train_loss=0.1583 val_loss=0.1815 val_acc=0.9456 val_auc=0.9802 (18s)
+[cnn] ep13 train_loss=0.1467 val_loss=0.1611 val_acc=0.9440 val_auc=0.9808 (18s)
+[cnn] ep14 train_loss=0.1417 val_loss=0.1377 val_acc=0.9584 val_auc=0.9813 (18s)
+[cnn] ep15 train_loss=0.1355 val_loss=0.1278 val_acc=0.9600 val_auc=0.9828 (18s)
+{
+  "model": "cnn",
+  "selected_checkpoint": "cnn:15",
+  "val_loss": 0.12782330811023712,
+  "test": {
+    "n": 621,
+    "accuracy": 0.9484702093397746,
+    "precision": 0.9859154929577465,
+    "recall": 0.693069306930693,
+    "specificity": 0.9980769230769231,
+    "f1": 0.813953488372093,
+    "roc_auc": 0.9751142421934501,
+    "confusion_matrix": {
+      "tn": 519,
+      "fp": 1,
+      "fn": 31,
+      "tp": 70
+    }
+  },
+  "test_ci95": {
+    "accuracy": [
+      0.9307568438003221,
+      0.964573268921095
+    ],
+    "precision": [
+      0.9523809523809523,
+      1.0
+    ],
+    "recall": [
+      0.6037654521795706,
+      0.7777777777777778
+    ],
+    "f1": [
+      0.7450980392156863,
+      0.8715155421859332
+    ],
+    "roc_auc": [
+      0.9582416800590493,
+      0.9890335614206581
+    ]
+  },
+  "test_nlm_only": {
+    "n": 110,
+    "accuracy": 0.8,
+    "precision": 0.9736842105263158,
+    "recall": 0.6379310344827587,
+    "specificity": 0.9807692307692307,
+    "f1": 0.7708333333333334,
+    "roc_auc": 0.9618700265251989,
+    "confusion_matrix": {
+      "tn": 51,
+      "fp": 1,
+      "fn": 21,
+      "tp": 37
+    }
+  }
+}
