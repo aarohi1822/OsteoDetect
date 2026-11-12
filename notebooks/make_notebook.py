@@ -23,7 +23,8 @@ Corrected version of `BONE_TB.ipynb`. Changes:
 """)
 
 code("""
-!pip -q install tensorflow opencv-python imagehash openpyxl scikit-learn
+# Versions this notebook was smoke-tested with; Colab's preinstalled pandas/numpy/pillow are left as-is.
+!pip -q install tensorflow==2.21.0 keras==3.15.1 scikit-learn==1.9.1 imagehash==4.3.2 openpyxl==3.1.5
 import os, hashlib, numpy as np, pandas as pd, tensorflow as tf
 from PIL import Image
 from sklearn.model_selection import StratifiedGroupKFold
