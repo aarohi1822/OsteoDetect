@@ -1,5 +1,7 @@
 # OsteoDetect: TB Chest X-ray Classifier
 
+Long-term goal: skeletal (bone) TB. This phase covers pulmonary TB vs Normal on chest X-rays only.
+
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/aarohi1822/OsteoDetect/blob/main/notebooks/BONE_TB_fixed.ipynb)
 
 This project classifies chest X-rays as **Tuberculosis vs Normal**. It started
